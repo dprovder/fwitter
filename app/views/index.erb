@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<div id="make">
+		<h1>Write Your Fweet!</h1>
+		<form method="POST" action="/">
+			Username:
+			<br>
+			<input type="text" name="username">
+			<br>Fweet:
+			<br>
+			<input type="text" name="fweet">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	
+  <div id="feed">
+		<ul>
+			<% @fweets.each do |fweet| %>
+
+				<DT><strong><%= fweet.user%></strong></DT>
+				<DD>
+					<%=fweet.content%>
+				</DD>
+				<%end%>
+					</ul>
+	</div>
+</body>
+
+</html>

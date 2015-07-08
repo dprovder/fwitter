@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+ </head>
+ <body>
+   <h1>Fweets!</h1>
+
+<div id ="feed"><
+  ul>
+   <% @fweets.each do |fweet| %>
+  
+  <DT><strong><%= fweet.user%></strong></DT>
+  <DD><%= fweet.content%></DD>
+    <%end%>
+</ul> 
+  </div>
+  
+ </body>
+</html>
